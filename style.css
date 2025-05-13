@@ -1,0 +1,582 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.layar-dalam{
+    width: 1000px;
+    margin: auto;
+}
+.layar-penuh{
+    width: 100%;
+}
+nav{
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    height: 50px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav.putih{
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+nav .logo{
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 1px #fff);
+}
+nav .logo img{
+    vertical-align: middle;
+    width: 120px;
+}
+
+nav .menu{
+    float: right;
+    height: 60px;
+    max-width: 600px;
+
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+}
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    background-color: transparent;
+}
+nav a{
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+
+nav ul li a {
+    color: #ffffff;
+    text-align: center;
+    padding:0px 16px 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+text-decoration: underline;
+}
+nav .menu .dropdown{
+    display: none;
+    background-color: #ffffff;
+    text-align: center;
+
+}
+
+nav ul li:hover .dropdown{
+    background-color: #7e7e7e;
+   height: 85%;
+    width: 170px;
+    display: list-item;
+    float: none;
+    position: relative;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+nav ul ul li{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+/*Search*/
+
+/*pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro {
+    z-index: 100;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+header .intro h3{
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+.tombol {
+    background-color: #6b47a7;
+    height: 40px;
+    line-height: 42px;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+}
+header .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+}
+.tombol-menu{
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+section{
+    padding: 50px 0px 50px 0px ;
+}
+section h3{
+    font-size: 30px;
+}
+section h3::after{
+    content: "";
+    border-bottom: 5px solid #6b47a7;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+}
+.about{
+    text-align: center;
+}
+section p.ringkasan{
+    font-style: italic;
+    font-size: 18px;
+    color:#ababab;
+}
+section .konten-isi p{
+    font-style: normal;
+}
+nav.putih{
+    background-color: #fff;
+}
+nav.putih .tombol-menu .garis{
+    background-color: #333;
+}
+nav.putih ul li a{
+    color:#333;
+}
+section.abu-abu{
+    background-color: #f5f6f6;
+}
+.source .la{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.source h6{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.source img{
+    width:50px;
+}
+.source div{
+    text-align: center;
+
+}
+.source .kumpulan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.source .kumpulan h6{
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.source .kumpulan p{
+    font-size: 16px;
+    font-style: italic;
+    text-align: left;
+}
+.source .kumpulan img{
+    width: 100px;
+}
+.source .kumpulan div{
+    text-align: center;
+}
+body section .card img{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body section .card{
+    font-family: sans-serif;
+    background-color: #f5f6f6;
+}
+/* WARNA TEXT*/
+.register-link{
+    color: #f5f6f6;
+}
+/* GRID CARD*/
+.section-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    width: 80%;
+    margin: 60px auto;
+    background-color: #ffffff;
+}
+.card{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px 0;
+    background-color: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,2);
+    font-size: 16px;
+}
+.card .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500px;
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 100px;
+    margin-left: 25%;
+    transform: translateX(-50px);
+    margin-bottom: 30px;
+}
+.card-1 .btn{
+    background-color: #462424;
+}
+.card-2 .btn{
+    background-color: #251212;
+}
+.card-3 .btn{
+    background-color: #100e64;
+}
+.card__img{
+    width: 100%;
+    display: block;
+}
+.card__details{
+    padding: 5px;
+}
+/*pop up*/
+.popup{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s;
+}
+.popup__content{
+    width: 45%;
+    background-color:#fff ;
+    box-shadow: 0 20px 40px rgba(0,0,0.2);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0,25);
+    opacity: 0;
+    transition: all .3s .1s;
+}
+.popup__img{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1px;
+}
+.popup__img img{
+    display: block;
+    width: 100%;
+}
+.popup__header{
+    text-align: center;
+    text-transform: uppercase;
+    color:#555;
+    margin-bottom: 36px;
+}
+.popup__header h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-style: verdana;
+}
+.popup__header h2{
+    font-size: 20px;
+    font-style: verdana;
+}
+.popup__text{
+    padding: 0 36px;
+    line-height: 1,4;
+}
+.popup__text p:not(:last-child){
+    margin-bottom: 16px;
+}
+.popup__btn{
+    background-color:#462424;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+}
+#popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+#popup:target .popup__content{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup__close:link,
+.popup__close:visited{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    text-decoration: none;
+    color:#000;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+.popup__close:hover,
+.popup__close:active{
+    color: #ffffff;
+}
+
+/*POP UP PERATURAN BASKET*/
+.popup2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s;
+}
+.popup2__content{
+    width: 45%;
+    background-color:#fff ;
+    box-shadow: 0 20px 40px rgba(0,0,0.2);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0,25);
+    opacity: 0;
+    transition: all .3s .1s;
+}
+.popup2__img{
+    display: flex;
+    width: 100%;
+    margin-bottom: 1px;
+}
+.popup2__img img{
+    display: block;
+    width: 100%;
+}
+.popup2__header{
+    text-align: center;
+    text-transform: uppercase;
+    color:#555;
+    margin-bottom: 36px;
+}
+.popup2__header h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-style: verdana;
+}
+.popup2__header h2{
+    font-size: 20px;
+    font-style: verdana;
+}
+.popup2__text{
+    padding: 0 36px;
+    line-height: 1,4;
+}
+.popup2__text p:not(:last-child){
+    margin-bottom: 16px;
+}
+.popup2__btn{
+    background-color:#462424;
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+}
+#popup2:target{
+    opacity: 1;
+    visibility: visible;
+}
+#popup2:target .popup2__content{
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup2__close:link,
+.popup2__close:visited{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    text-decoration: none;
+    color:#000;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 1;
+    transition: all .3s;
+}
+.popup2__close:hover,
+.popup2__close:active{
+    color: #ffffff;
+}
+/*VIDEO WEBSITE*/
+.videopassing1 h3{
+    align-items: center;
+    font-size: 30px;
+    position: relative;;
+    text-align: center;
+}
+.videopassing1 p{
+    position: relative;
+    font-size: 15px;
+    text-align: center;
+}
+.videodribble1 h3{
+    align-items: center;
+    font-size: 30px;
+    position: relative;;
+    text-align: center;
+}
+.videodribble1 p{
+    position: relative;
+    font-size: 15px;
+    text-align: center
+}
+.videoshooting1 h3{
+    align-items: center;
+    font-size: 30px;
+    position: relative;;
+    text-align: center;
+}
+.videoshooting1 p{
+    position: relative;
+    font-size: 15px;
+    text-align: center
+}
+.videolayup1 h3{
+    align-items: center;
+    font-size: 30px;
+    position: relative;;
+    text-align: center;
+}
+.videolayup1 p{
+    position: relative;
+    font-size: 15px;
+    text-align: center
+}
+.videoapaitubasket h3{
+    align-items: center;
+    font-size: 30px;
+    position: relative;;
+    text-align: center;
+}
+.videoapaitubasket p{
+    position: relative;
+    font-size: 15px;
+    text-align: center
+}
+.videoapaitubasket{
+    position: relative;
+}
+@media screen and (max-width:991.98px){
+    .layar-dalam{
+        width: 90%;
+    }
+    nav .menu ul{
+        display: none;
+        margin-top: 60px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }   
+    nav .menu ul li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background-color: #fff;
+        line-height: 40px;
+    }
+    nav .menu ul li a{
+        color: #333;
+    }
+    .tombol-menu {
+        display: flex;
+    }
+}
